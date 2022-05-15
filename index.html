@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <title>Frontend Mentor | Room homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.7em; text-align: center; display: flex; align-items: center; width: 100%; height: 100%; justify-content: center; flex-wrap: wrap;}
+    .attribution a { 
+                    color: hsl(228, 31%, 37%); 
+                    text-decoration: none;
+                    font-weight: bold;
+                  }
+    .attribution a:hover{
+      filter: contrast(70%);
+      text-decoration: underline;
+    }
+    .attribution a  + a {
+                    color: rgb(22, 69, 139);
+    }
+  </style>
+</head>
+<body>
+  <div id="top">
+    <div id="left">
+      <nav>
+        <div id="menu">
+          <img src="assets/images/icon-hamburger.svg" alt="menu bar" onclick="menu_bar()" style="height: 15px; width: 20px;">
+        </div>
+        <img src="assets/images/logo.svg" alt="Logo">
+        <a href="">Home</a>
+        <a href="">Shop</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </nav>
+      <div class="arrows" id="arrow_mobile">
+        <div>
+          <img src="assets/images/icon-angle-left.svg" alt="arrow left" id="arrow left" onclick="imgTransition('left')">
+          <img src="assets/images/icon-angle-right.svg" alt="arrow right" id="arrow right" onclick="imgTransition('right')">
+        </div>
+      </div>
+    </div>
+    <div id="right">
+      <div>
+        <h1>Discover innovative ways to decorate</h1>
+        <p>
+          We provide unmatched quality, comfort, and style for property owners across the country.
+          Our experts combine form and function in bringing your vision to life. Create a room in your
+          own style with our collection and make your property a reflection of you and what you love.
+          <a href="" style="display: block; margin-top: 2em;">Shop now <img src="assets/images/icon-arrow.svg" alt="go arrow"></a>
+        </p>
+      </div>
+      <div id="arrow-pc">
+        <div>
+          <img src="assets/images/icon-angle-left.svg" alt="arrow left" id="arrow left" onclick="imgTransition('left')">
+          <img src="assets/images/icon-angle-right.svg" alt="arrow right" id="arrow right" onclick="imgTransition('right')">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="down">
+    <div id="first-img"></div>
+    <div id="text">
+      <div>
+        <h1>About our furniture</h1>
+        <p>
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </div>
+    </div>
+    <div id="second-img">
+      <div class="attribution">
+        Challenge by: <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by:  <a href="https://github.com/carlosmateus15" target="_blank">Carlos Matateu Mateus</a>.
+      </div>
+    </div>
+  </div>
+  <script src="code/script.js"></script>
+</body>
+</html>
